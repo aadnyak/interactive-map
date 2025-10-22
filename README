@@ -1,0 +1,32 @@
+# Interactive Map (HTML/CSS/JS + Leaflet)
+
+## Overview
+This is an interactive web map built using Leaflet.js. It displays multiple points of interest (markers), supports searching by name/category, filtering by category, shows popups with images and descriptions, and includes a geolocation button.
+
+## Files
+- `index.html` — main UI (map + controls)
+- `styles.css` — styles and responsive layout
+- `script.js` — JavaScript: loads `data/locations.json`, creates markers, search & filter, geolocation
+- `data/locations.json` — marker data (name, lat, lng, category, image)
+- `images/` — thumbnails used in popups and list
+
+## How to run (sequence-wise execution)
+1. **Download / clone** the `interactive-map` folder to your machine.
+2. Make sure the folder structure is intact (`index.html`, `styles.css`, `script.js`, `data/locations.json`, `images/`).
+3. **Serve locally** (recommended so fetch() works correctly):
+   - Python 3: `python -m http.server 8000` (run inside the project folder).
+   - Node: `npx serve .` or use VS Code Live Server.
+4. Open `http://localhost:8000` (or the port shown) in your browser.
+5. **Test features in order**:
+   - Map loads with tiles and markers.
+   - Sidebar shows all locations; click a list item to center and open popup.
+   - Click markers to see popup (image + description + link to Google Maps).
+   - Use the search box to search by name, category or description.
+   - Use the category dropdown to filter by category.
+   - Click the **📍 My location** button to center the map on your device location (permission requested).
+   - Resize the browser to confirm responsive behavior.
+6. To **deploy**, push to GitHub and use GitHub Pages, Netlify or Vercel to host.
+
+## Notes
+- No API key required — uses OpenStreetMap tiles and Leaflet.
+- To use Google Maps tiles or Google Places autocomplete you would need API keys and extra code.

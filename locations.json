@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "name":"Central Park",
+    "lat":40.785091,
+    "lng":-73.968285,
+    "category":"Park",
+    "description":"Large urban park with walking paths and lakes.",
+    "image":"images/centralpark.jpg"
+  },
+  {
+    "id":2,
+    "name":"Metropolitan Museum",
+    "lat":40.779437,
+    "lng":-73.963244,
+    "category":"Museum",
+    "description":"World-renowned art museum with diverse collections.",
+    "image":"images/metmuseum.jpg"
+  },
+  {
+    "id":3,
+    "name":"Joe's Pizza",
+    "lat":40.730610,
+    "lng":-73.995242,
+    "category":"Restaurant",
+    "description":"Famous local pizza spot.",
+    "image":"images/joespizza.jpg"
+  },
+  {
+    "id":4,
+    "name":"Riverside Park",
+    "lat":40.800676,
+    "lng":-73.970833,
+    "category":"Park",
+    "description":"Scenic riverside walkway and green spaces.",
+    "image":"images/riverside.jpg"
+  },
+  {
+    "id":5,
+    "name":"City Science Center",
+    "lat":40.748817,
+    "lng":-73.985428,
+    "category":"Museum",
+    "description":"Interactive science exhibits for all ages.",
+    "image":"images/sciencecenter.jpg"
+  }
+]

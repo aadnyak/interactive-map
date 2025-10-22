@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Map — Project</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Interactive Map</h1>
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="Search by name or category..." />
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+      </select>
+      <button id="locateBtn" title="Find my location">📍 My location</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="map" aria-label="Interactive map"></div>
+    <aside class="sidebar" id="sidebar">
+      <h2>Locations</h2>
+      <ul id="locationList"></ul>
+      <p class="legend">Click a list item or map marker to open details.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> — Interactive Map Project</small>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
